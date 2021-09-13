@@ -16,8 +16,7 @@ Highcharts.chart("container", {
     labels: {
       format: `
       <div style="display: flex">
-        <div style="align-self: center;
-        ">
+        <div style="align-self: center;">
           <img src='./assets/${countryName}.png' />
         </div>
         <div style="display: flex;flex-direction: column">
@@ -29,10 +28,10 @@ Highcharts.chart("container", {
           </div>
         </div>
       </div>`,
-      text: '',
-      // align: 'low',
       useHTML: true,
-			style: { "color": "#fff" },
+      style: { "color": "#fff" },
+      align: 'center',
+      allowOverlap: true
     },
     // title: {
     //   text: '<img src="https://www.highcharts.com/samples/graphics/sun.png" />',
