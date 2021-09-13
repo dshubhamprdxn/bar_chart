@@ -1,3 +1,4 @@
+var countryName = 'india';
 Highcharts.chart("container", {
   chart: {
     type: "bar",
@@ -13,9 +14,31 @@ Highcharts.chart("container", {
     lineColor: "#fff",
     lineWidth: 0,
     labels: {
-      format: "FF<br>ED", // The $ is literally a dollar unit
+      format: `
+      <div style="display: flex">
+        <div style="align-self: center;
+        ">
+          <img src='./assets/${countryName}.png' />
+        </div>
+        <div style="display: flex;flex-direction: column">
+          <div style="display: block;padding: 25% 0 0 25%;">
+            <img src='./assets/Ecosystem-Icon.png' />
+          </div>
+          <div style="display: block;padding: 40% 0 0 25%;">
+            <img src='./assets/Foundations-Icon.png' />
+          </div>
+        </div>
+      </div>`,
+      text: '',
+      // align: 'low',
+      useHTML: true,
 			style: { "color": "#fff" },
     },
+    // title: {
+    //   text: '<img src="https://www.highcharts.com/samples/graphics/sun.png" />',
+    //   // align: 'low',
+    //   useHTML: true,
+    // }
   },
   yAxis: {
     gridLineWidth: 0,
