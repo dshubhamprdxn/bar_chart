@@ -31,7 +31,7 @@ Highcharts.chart("container", {
       useHTML: true,
       style: { "color": "#fff" },
       align: 'center',
-      allowOverlap: true
+      allowOverlap: true,
     },
     // title: {
     //   text: '<img src="https://www.highcharts.com/samples/graphics/sun.png" />',
